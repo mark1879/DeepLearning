@@ -35,11 +35,13 @@ for epoch in range(num_epochs):
     if (epoch + 1) % 5 == 0:
         print('Epoch [{}/{}], Loss: {:.4f}'.format(epoch + 1, num_epochs, loss.item()))
 
+torch.save(model.state_dict(), 'model.ckpt')
+
 predicted = model(torch.from_numpy(x_train)).detach().numpy()
-
-print(predicted)
-
 plt.plot(x_train, y_train, 'ro', label='Original data')
 plt.plot(x_train, predicted, label='Fitted line')
 plt.legend()
 plt.show()
+
+
+
