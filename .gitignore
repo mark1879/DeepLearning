@@ -7,3 +7,6 @@ DiveIntoDeepLearning/data
 DiveIntoDeepLearning/LibDL/__pycache__
 DiveIntoDeepLearning/linear_networks/.ipynb_checkpoints
 DiveIntoDeepLearning/multilayer-perceptrons/.ipynb_checkpoints
+.idea
+PytorchPractice/data
+OptimizationAlgorithms/.ipynb_checkpoints
